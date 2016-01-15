@@ -24,16 +24,16 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <!-- menu -->
             <ul class="nav navbar-nav ">
-                <li class="active"><a href="/index.php">Home</a></li>
-                <li class="active"><a href="/invoeren.php">Invoeren</a></li>
-                <li class="active"><a href="/opvragen.php">Opvragen</a></li>
-                <li class="active"><a href="/contact.php">Contact</a></li>
-                <li class="active"><a href="/persoonlijke_instelling.php">Persoonlijke Instelling</a></li><!-- Dit komt alleen als er iemand ingelogd is. -->
+                <li class="active"><a href="{{ path('uren_default_index') }}">Home</a></li>
+                <li class="active"><a href="{{ path('uren_default_invoer') }}">Invoeren</a></li>
+                <li class="active"><a href="{{ path('uren_default_opvraag') }}">Opvragen</a></li>
+                <li class="active"><a href="{{ path('uren_default_contact') }}">Contact</a></li>
+                <li class="active"><a href="{{ path('uren_default_settings') }}">Persoonlijke Instelling</a></li><!-- Dit komt alleen als er iemand ingelogd is. -->
             </ul>
             <!-- login -->
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="{{ path('uren_default_sign_up') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="{{ path('uren_default_log_in') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </div>
